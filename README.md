@@ -12,6 +12,7 @@ Otros libros:
 
 Otros recursos:
 - [Essential JS namespacing - Addy Osmani](https://addyosmani.com/blog/essential-js-namespacing/)
+- [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
 
 ##Contacto
 Para responder consultas pueden utilizar los siguientes contactos:
