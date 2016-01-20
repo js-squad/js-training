@@ -50,7 +50,7 @@ var person1 = new Person("juan");
 var person2 = construct(Person, [ "pepe" ]);
 
 console.log(person1 instanceof Person); // true
-console.log(person1.name); // "juan"
+console.log(person1._name); // "juan"
 console.log(person2 instanceof Person); // true
-console.log(person2.name); // "pepe"
+console.log(person2._name); // "pepe"
 ```
