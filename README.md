@@ -6,9 +6,12 @@ Durante el training vamos a estar utilizando principalmente los siguientes libro
 - [Effective JavaScript](http://effectivejs.com)
 - [JavaScript Patterns](http://www.amazon.com/JavaScript-Patterns-Stoyan-Stefanov/dp/0596806752)
 
-Otros:
+Otros libros:
 - [You Don't Know JS](http://youdontknowjs.com)
 - [JavaScript: the definitive guide](http://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides-ebook/dp/B004XQX4K0)
+
+Otros recursos:
+- [Essential JS namespacing - Addy Osmani](https://addyosmani.com/blog/essential-js-namespacing/)
 
 ##Contacto
 Para responder consultas pueden utilizar los siguientes contactos:
