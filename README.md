@@ -10,6 +10,9 @@ Otros:
 - [You Don't Know JS](http://youdontknowjs.com)
 - [JavaScript: the definitive guide](http://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides-ebook/dp/B004XQX4K0)
 
-
+##Contacto
+Para responder consultas pueden utilizar los siguientes contactos:
+- Mauro Titimoli - mgtitimoli@gmail.com
+- Alejandro Oviedo - alejandro.oviedo.g@gmail.com
 
 
