@@ -158,40 +158,7 @@ Person.prototype.sayHello = function() {
 var person1 = new Person("juan");
 ```
 
-2 - New operator implementation
-
-```javascript
-function construct(Constructor, args) {
-
-    var instance = Object.create(Constructor.prototype);
-
-    var result = Constructor.apply(instance, args);
-
-    return typeof result === "object" && result !== null ?
-        result :
-        instance;
-}
-
-function Person(name) {
-
-    this._name = name;
-}
-
-Person.prototype.sayHello = function() {
-
-    console.log("Hi, I'm " + this._name);
-}
-
-var person1 = new Person("juan");
-var person2 = construct(Person, [ "pepe" ]);
-
-console.log(person1 instanceof Person); // true
-console.log(person1.name); // "juan"
-console.log(person2 instanceof Person); // true
-console.log(person2.name); // "pepe"
-```
-
-3 - Do not overwrite constructor property!
+2 - Do not overwrite constructor property!
 
 ```javascript
 function Person(name) {
@@ -210,7 +177,7 @@ Person.prototype = {
 console.log(Person.prototype.constructor); // undefined
 ```
 
-4 - Privileged methods ("private" props)
+3 - Privileged methods ("private" props)
 
 > Take a time to thing if this is really necessary (each instance has differents privileged methods function instances - more memory)
 
