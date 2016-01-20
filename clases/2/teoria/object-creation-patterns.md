@@ -133,7 +133,7 @@ console.log(jediProto.isPrototypeOf(jedi)); // true
 - They are just a functions
 - By convention their names start with uppercase
 - They allow an "easy" way to create objects with shared functionality
-- Its prototype property is used as the prototype of the instances constructed (using `new`)
+- Its prototype property is used as the prototype of the instances constructed by it (using `new`)
 - They require the use of the `new` operator
 - `Constructor.prototype === instance.__proto__`
 - `use strict` or recursive call with new workaround
