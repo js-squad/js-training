@@ -20,7 +20,7 @@
 ### Example
 
 ```javascript
-console.log(Object.getPrototypeOf({}) === Object);
+console.log(Object.getPrototypeOf({}) === Object.prototype);
 ```
 
 ## Object.setPrototypeOf
@@ -220,5 +220,5 @@ console.log(hasOwnProp(person1, "_age")); // false
 console.log(hasOwnProp(person1, "setAge")); // true
 console.log(hasOwnProp(person1, "sayHello")); // true
 console.log(person1.setAge === person2.setAge); // false
-console.log(person1.sayHello === person2.sayHello); // false
+console.log(person1.sayHello === person2.sayHello); // true
 ```
