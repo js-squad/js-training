@@ -15,7 +15,7 @@ Otros recursos:
 - [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
 
 ##Contacto
-Para responder consultas pueden utilizar los siguientes contactos:
+Para realizar consultas pueden utilizar los siguientes contactos:
 - Mauro Titimoli - mgtitimoli@gmail.com
 - Alejandro Oviedo - alejandro.oviedo.g@gmail.com
 
