@@ -1,4 +1,4 @@
-1 - Transform the following singleton (calculator) to the corresponding (stateless or stateful) module pattern (it has to receive the export destination)
+1 - Transform the following singleton (calculator) to a proper (stateless or stateful) module representation (it has to receive the export destination)
 
 ```javascript
 var calculator = {
