@@ -6,6 +6,7 @@
 - Named parameters are easy to remember that positional ones
 - It is easy to implement optional parameters (just do not specify that prop)
 - Not all objects parameters are configuration objects
+- Allow the addition of new parameters without breaking existing code (they are just new properties)
 
 ## Examples
 
