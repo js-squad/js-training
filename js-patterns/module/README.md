@@ -380,7 +380,7 @@ var App.Module1 = (function(Module2, Module5) {
 ### Concepts
 
 - It should only be used to **stateless modules** (it uses a literal singleton)
-- Instead of constructing the singleton throughout the closure, it is exported in a single statement as an anonymous object literal
+- Instead of constructing the singleton throughout the closure, it is exported with a single statement at the end using an anonymous object literal
 - Because there is only a single export statement, it can be easily seen what functionallity exports (interface)
 - The fact that there is an additional object (anonymous object literal) allows to keep fixed their methods (that is what the consumer sees) and change the name of the functions they contain
 
