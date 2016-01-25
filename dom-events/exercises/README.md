@@ -1,0 +1,3 @@
+# "Infinite" list
+
+Choose some api (swapi, gh, flickr), load 50 initial items and display them using an **ul** html element (each item must be a children - **li** - of it). When the user is seeing the last element, and the **scroll** event is fired, place a temporary loading indicator (**li** element) while a new request is dispatched to fetch another 50 elements that once they arrived they must be added at the bottom of the list. If an element is clicked, then an alert dialog must be opened displaying some info of it.
