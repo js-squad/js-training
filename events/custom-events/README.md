@@ -16,12 +16,11 @@ var listener = function(event) {
     console.log(event.detail); // prints 'my detail for this event'
 }
 ```
-Take in consideration that the `detail` property of the second argument is the only one allowed to pass data, any other property will not be added to the fired Event object.
+Take in consideration that the `detail` property of the second argument of the constructor is the only one allowed to pass data, any other property will not be added to the fired Event object.
 
 ## Compatibility
-It's supported on the majority of browsers but lacks of support on older IE versions.
-![img](http://i.imgur.com/FV8wsTL.png)*
-* Source: [caniuse.com](http://caniuse.com/#search=customeve)
+It's supported by the majority of browsers but lacks support on older IE versions.
+![img](http://i.imgur.com/FV8wsTL.png)* Source: [caniuse.com](http://caniuse.com/#search=customeve)
 
 ### Polyfill
 There's a [polyfill](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent#Polyfill) used to add feature on older browsers.
