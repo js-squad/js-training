@@ -16,6 +16,7 @@ Durante el training vamos a estar utilizando principalmente los siguientes libro
 
 ### Slides
 - [Closures, IIFEs y Higher Order functions](https://slides.com/a0viedo/closures)
+- [Resolución de problemas](https://slides.com/a0viedo/resolucion-de-problemas/)
 
 ##Contacto
 Para realizar consultas pueden utilizar los siguientes contactos:
