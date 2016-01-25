@@ -3,7 +3,7 @@
 ## Event flow
 
 - image: https://goo.gl/XAz2Jd
-- MDN: https://developer.mozilla.org/en-US/docs/Web/API/Event/eventPhase
+- event.eventPhase: https://goo.gl/1mMmBR
 
 #### Concepts
 
