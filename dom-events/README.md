@@ -166,7 +166,7 @@ el.removeEventListener("click", sayUserName);
 
 ### stopPropagation VS stopImmediatePropagation
 
-> **stopPropagation** prevents handlers attached to the *parent elements* to be executed while **stopImmediatePropagation** does the same but also prevents handlers attached to the *current element* to be executed
+> **stopPropagation** (DOM Level 2) prevents handlers attached to the *parent elements* to be executed while **stopImmediatePropagation** (DOM Level 3) does the same but also prevents handlers attached to the *current element* to be executed
 
 ## Bonus Tracks
 
