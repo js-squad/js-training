@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.Personalities {
+    display: inline-block;
+    list-style-type: none;
+    max-width: 150px;
+    max-height: 100%;
+    padding: 0 10px;
+    overflow-y: scroll;
+}
+
+.Personalities-personality {
+    border: 1px solid black;
+    cursor: pointer;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.PersonalitySelected {
+    display: inline-block;
+}
