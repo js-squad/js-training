@@ -24,9 +24,12 @@ Durante el training vamos a estar utilizando principalmente los siguientes libro
 - [Closures, IIFEs y Higher Order functions](https://slides.com/a0viedo/closures)
 - [Resolución de problemas](https://slides.com/a0viedo/resolucion-de-problemas/)
 
-##Contacto
+## Contacto
 Para realizar consultas pueden utilizar los siguientes contactos:
 - Mauro Titimoli - mgtitimoli@gmail.com
 - Alejandro Oviedo - alejandro.oviedo.g@gmail.com
+
+## Projectos finales
+- Tiendas oficiales: https://github.com/js-squad/tiendas-oficiales
 
 
