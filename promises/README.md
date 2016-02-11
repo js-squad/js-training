@@ -43,14 +43,23 @@ getUser()
     });
 ```
 
-## Promise.all
-It allows the manipulation of a list of promises in parallel with a single resolve handler:
+## Error handling
+If inside a promise an error is thrown or the promise itself is reject, it could be handled with the `.catch` method.
+Any error in a promise chain can be handled with the `.catch` method.
 ```js
-Promise.all([Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)])
-    .then(function(result) {
-        console.log(result); //
+Promise.reject(Error('something is wrong'))
+    .catch(function(err){
+        console.log(err);
+    });
+
+new Promise(function(resolve,reject){
+        throw Error('something is much more wrong');
+    }).catch(function(err){
+        console.log(err);
     });
 ```
+
+Without the error handler, every error inside a promise will produce an `Uncaught error`.
 
 ## Promise.resolve
 It's a shorthand method for creating a new promise and resolving with the specified argument.
@@ -72,6 +81,17 @@ new Promise(funtion(resolve, reject) {
     });
 ```
 
+
+## Promise.all
+It allows the manipulation of a list of promises in parallel with a single resolve handler:
+```js
+Promise.all([Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)])
+    .then(function(result) {
+        console.log(result); //
+    });
+```
+
+
 ## Promise.race
 It resolves or rejects as soon as any of the promises resolves or rejects.
 ```js
@@ -88,23 +108,6 @@ Promise.race([p1, p2]).then(function(value) {
 });
 ```
 
-## Error handling
-If inside a promise an error is thrown or the promise itself is reject, it could be handled with the `.catch` method.
-Any error in a promise chain can be handled with the `.catch` method.
-```js
-Promise.reject(Error('something is wrong'))
-    .catch(function(err){
-        console.log(err);
-    });
-
-new Promise(function(resolve,reject){
-        throw Error('something is much more wrong');
-    }).catch(function(err){
-        console.log(err);
-    });
-```
-
-Without the error handler, every error inside a promise will produce an `Uncaught error`.
 
 
 ## Resources

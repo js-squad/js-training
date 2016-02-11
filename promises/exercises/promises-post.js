@@ -13,7 +13,9 @@
   var parseJSONTest = {};
 
   assertEqual(typeof parseJSON, 'function');
-  var test1 = Promise.all([parseJSON("{}").then(function(res) {
+  var result = parseJSON("{}");
+  assertEqual(typeof result.then, 'function');
+  var test1 = Promise.all([result.then(function(res) {
     assertEqual(typeof res, 'object');
     if(res === null) {
       throw new Error('Incorrect result.');
