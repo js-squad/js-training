@@ -1,0 +1,12 @@
+{
+  "name": "",
+  "private": true,
+  "scripts": {
+    "dev": "mocha --reporter min --watch",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "2.4.5"
+  }
+}
