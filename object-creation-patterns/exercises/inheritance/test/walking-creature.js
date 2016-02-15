@@ -4,32 +4,32 @@ var WalkingCreature = require("../src/walking-creature");
 var LivingCreature = require("../src/leaving-creature");
 var WalkingCreature = require("../src/walking-creature");
 
-describe("WalkingCriature", function () {
+describe("WalkingCreature", function () {
 
     it.skip("must be a function", function () {
 
-        assert(typeof WalkingCriature === "function");
+        assert(typeof WalkingCreature === "function");
     });
 
-    it.skip("must construct objects with prototypes: WalkingCriature.prototype", function () {
+    it.skip("must construct objects with prototypes: WalkingCreature.prototype", function () {
 
         var legs = 2;
 
-        var wc = new WalkingCriature(legs);
+        var wc = new WalkingCreature(legs);
 
         var actual   = Object.getPrototypeOf(wc);
-        var expected = WalkingCriature.prototype;
+        var expected = WalkingCreature.prototype;
 
         assert(actual === expected);
     });
 
-    it.skip("must construct inherit from: LivingCriature", function () {
+    it.skip("must construct inherit from: LivingCreature", function () {
 
         var legs = 2;
 
-        var wc = new WalkingCriature(legs);
+        var wc = new WalkingCreature(legs);
 
-        var actual   = wc instanceof LivingCriature;
+        var actual   = wc instanceof LivingCreature;
         var expected = true;
 
         assert(actual === expected);
@@ -39,9 +39,9 @@ describe("WalkingCriature", function () {
 
         var legs = 2;
 
-        var wc = new WalkingCriature(legs);
+        var wc = new WalkingCreature(legs);
 
-        var actual   = wc instanceof WalkingCriature;
+        var actual   = wc instanceof WalkingCreature;
         var expected = true;
 
         assert(actual === expected);
@@ -55,11 +55,11 @@ describe("WalkingCriature", function () {
 
                 var legs = 2;
 
-                var WalkingCriature = new WalkingCriature(legs);
+                var WalkingCreature = new WalkingCreature(legs);
 
                 assert.throws(function () {
 
-                    WalkingCriature.walk();
+                    WalkingCreature.walk();
                 });
             });
 
@@ -68,11 +68,11 @@ describe("WalkingCriature", function () {
                 var initialOxygen = 2;
                 var legs = 2;
 
-                var WalkingCriature = new WalkingCriature(initialOxygen, legs);
+                var WalkingCreature = new WalkingCreature(initialOxygen, legs);
 
-                WalkingCriature.walk();
+                WalkingCreature.walk();
 
-                var actual   = WalkingCriature.getSteps();
+                var actual   = WalkingCreature.getSteps();
                 var expected = 1;
 
                 assert(actual === expected);
@@ -83,11 +83,11 @@ describe("WalkingCriature", function () {
                 var initialOxygen = 2;
                 var legs = 2;
 
-                var WalkingCriature = new WalkingCriature(initialOxygen, legs);
+                var WalkingCreature = new WalkingCreature(initialOxygen, legs);
 
-                WalkingCriature.walk();
+                WalkingCreature.walk();
 
-                var actual   = WalkingCriature.getRemainingOxygen();
+                var actual   = WalkingCreature.getRemainingOxygen();
                 var expected = initialOxygen - 1;
 
                 assert(actual === expected);
