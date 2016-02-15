@@ -1,6 +1,6 @@
 var assert = require("assert");
 
-var LivingCreature = require("../src/leaving-creature");
+var LivingCreature = require("../src/living-creature");
 var Walker = require("../src/walker");
 var WalkingCreature = require("../src/walking-creature");
 
