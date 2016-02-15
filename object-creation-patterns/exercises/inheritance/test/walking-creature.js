@@ -1,7 +1,7 @@
 var assert = require("assert");
 
-var WalkingCreature = require("../src/walking-creature");
 var LivingCreature = require("../src/leaving-creature");
+var Walker = require("../src/walker");
 var WalkingCreature = require("../src/walking-creature");
 
 describe("WalkingCreature", function () {
@@ -55,7 +55,7 @@ describe("WalkingCreature", function () {
 
                 var legs = 2;
 
-                var WalkingCreature = new WalkingCreature(legs);
+                var wc = new WalkingCreature(legs);
 
                 assert.throws(function () {
 
@@ -68,7 +68,7 @@ describe("WalkingCreature", function () {
                 var initialOxygen = 2;
                 var legs = 2;
 
-                var WalkingCreature = new WalkingCreature(initialOxygen, legs);
+                var wc = new WalkingCreature(initialOxygen, legs);
 
                 WalkingCreature.walk();
 
@@ -83,7 +83,7 @@ describe("WalkingCreature", function () {
                 var initialOxygen = 2;
                 var legs = 2;
 
-                var WalkingCreature = new WalkingCreature(initialOxygen, legs);
+                var wc = new WalkingCreature(initialOxygen, legs);
 
                 WalkingCreature.walk();
 
