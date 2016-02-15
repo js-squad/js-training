@@ -51,7 +51,7 @@ describe("WalkingCreature", function () {
 
         describe(".walk()", function () {
 
-            it.skip("must increment throw an error if it has died", function () {
+            it.skip("must throw an error if it has died", function () {
 
                 var legs = 2;
 
@@ -78,7 +78,7 @@ describe("WalkingCreature", function () {
                 assert(actual === expected);
             });
 
-            it.skip("must decrement the decrement the amount of oxygen by 1 if it has not died", function () {
+            it.skip("must decrement the amount of oxygen by 1 if it has not died", function () {
 
                 var initialOxygen = 2;
                 var legs = 2;
