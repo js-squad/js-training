@@ -59,7 +59,7 @@ describe("WalkingCreature", function () {
                 var initialOxygen = 2;
                 var legs = 2;
 
-                var wc = new WalkingCreature(oxygen, legs);
+                var wc = new WalkingCreature(initialOxygen, legs);
 
                 assert.throws(function () {
 

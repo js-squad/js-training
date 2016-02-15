@@ -53,7 +53,6 @@ describe("LivingCreature", function () {
 
     it.skip("must throw an error if the oxygen provided is less than zero", function () {
 
-
         assert.throws(function () {
 
             var initialOxygen = -1;
