@@ -17,21 +17,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
-- [ES2015 (aka ES6)](#)
-    - [Object literal enhancements](#)
-    - [Destructuring](#)
-    - [Default](#)
-    - [Spread](#)
-    - [Rest](#)
-    - [Arrow functions](#)
-    - [Iterators](#)
-    - [Maps](#)
-    - [WeakMaps](#)
-    - [Sets](#)
-    - [WeakSets](#)
-
 ## ES2015 (aka ES6)
 
 ### Object literal enhancements
