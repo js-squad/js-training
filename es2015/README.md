@@ -1,3 +1,37 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [ES2015 (aka ES6)](#es2015-aka-es6)
+  - [Object literal enhancements](#object-literal-enhancements)
+  - [Destructuring](#destructuring)
+  - [Default](#default)
+  - [Spread](#spread)
+  - [Rest](#rest)
+  - [Arrow functions](#arrow-functions)
+  - [Iterators](#iterators)
+  - [Maps](#maps)
+  - [WeakMaps](#weakmaps)
+  - [Sets](#sets)
+  - [WeakSets](#weaksets)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [ES2015 (aka ES6)](#)
+    - [Object literal enhancements](#)
+    - [Destructuring](#)
+    - [Default](#)
+    - [Spread](#)
+    - [Rest](#)
+    - [Arrow functions](#)
+    - [Iterators](#)
+    - [Maps](#)
+    - [WeakMaps](#)
+    - [Sets](#)
+    - [WeakSets](#)
+
 ## ES2015 (aka ES6)
 
 ### Object literal enhancements
