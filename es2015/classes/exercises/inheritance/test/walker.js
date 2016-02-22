@@ -51,10 +51,9 @@ describe("Walker", () => {
 
         assert.throws(() => {
 
-            const initialOxygen = 2;
             const legs = undefined;
 
-            const walker = new Walker(initialOxygen, legs);
+            const walker = new Walker(legs);
         });
     });
 
@@ -62,10 +61,9 @@ describe("Walker", () => {
 
         assert.throws(() => {
 
-            const initialOxygen = 2;
             const legs = 0;
 
-            const walker = new Walker(initialOxygen, legs);
+            const walker = new Walker(legs);
         });
     });
 
@@ -73,10 +71,9 @@ describe("Walker", () => {
 
         assert.throws(() => {
 
-            const initialOxygen = 2;
             const legs = 1;
 
-            const walker = new Walker(initialOxygen, legs);
+            const walker = new Walker(legs);
         });
     });
 
@@ -84,10 +81,9 @@ describe("Walker", () => {
 
         assert.doesNotThrow(() => {
 
-            const initialOxygen = 2;
             const legs = 2;
 
-            const walker = new Walker(initialOxygen, legs);
+            const walker = new Walker(legs);
         });
     });
 
@@ -97,10 +93,9 @@ describe("Walker", () => {
 
             it.skip("must return the number of legs provided in the initialization", () => {
 
-                const initialOxygen = 2;
                 const legs = 2;
 
-                const walker = new Walker(initialOxygen, legs);
+                const walker = new Walker(legs);
 
                 const actual   = walker.getLegs();
                 const expected = legs;
@@ -113,10 +108,9 @@ describe("Walker", () => {
 
             it.skip("must return 0 if it walk has not yet been invoked", () => {
 
-                const initialOxygen = 2;
                 const legs = 2;
 
-                const walker = new Walker(initialOxygen, legs);
+                const walker = new Walker(legs);
 
                 const actual   = walker.getLegs();
                 const expected = legs;
@@ -129,10 +123,9 @@ describe("Walker", () => {
 
             it.skip("must increment the amount of steps by 1", () => {
 
-                const initialOxygen = 2;
                 const legs = 2;
 
-                const walker = new Walker(initialOxygen, legs);
+                const walker = new Walker(legs);
 
                 walker.walk();
 
