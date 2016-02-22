@@ -9,8 +9,3 @@
 // - walk
 //   - must throw an exception if it has died
 //   - must consume oxygen and walk
-
-import Walker from "./walker";
-
-export default class WalkingCreature extends Walker {
-}
