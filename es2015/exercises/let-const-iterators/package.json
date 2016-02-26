@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "private": true,
+  "scripts": {
+    "dev": "mocha --reporter min --watch --compilers js:babel-register",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "esprima": "^2.7.2",
+    "estraverse": "^4.1.1",
+    "lodash": "^4.5.0",
+    "mocha": "2.4.5"
+  }
+}

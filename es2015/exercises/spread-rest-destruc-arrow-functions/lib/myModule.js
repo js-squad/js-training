@@ -7,12 +7,12 @@ var myModule = {
   },
 
   // it should receive an array of integers and return the sum of all the values
-  sumArray: function() {
+  sumArray: function(arr) {
     
   },
 
   // it should receive an array of array of integers and return the sum of all the values
-  sumArrayOfArrays: function() {
+  sumArrayOfArrays: function(arr) {
     
   },
 
@@ -20,7 +20,7 @@ var myModule = {
   // but it assumes the array contains only objects and receives a second
   // parameter to extract
   // pluck([{ a:1, b:2}, {a: 'hi', b:'hello'}, {a: 3, b:4}], 'a') =====> [1,'hi',3]
-  pluck: function() {
+  pluck: function(arr) {
     // hint1: use computed property names (enhanced object literals)
     // to destructure dynamic keys
     // hint2: if you want to destructure parameters of an arrow

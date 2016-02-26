@@ -56,7 +56,10 @@ describe("myModule", function () {
     });
 
     describe('sum', function() {
-        it.skip('should sum correctly', function() {
+        // chequear que no usen arguments
+
+        it('should sum correctly', function() {
+            console.log(myModule.sum(1,2,3));
             assert(myModule.sum(0,1,2) === 3);
             assert(myModule.sum() === 0);
         });
@@ -67,7 +70,7 @@ describe("myModule", function () {
     });
 
     describe('sumArray', function() {
-        it.skip('should sum arrays correctly', function() {
+        it.skip('should sum array elements correctly', function() {
             assert(myModule.sumArray([0,1,2]) === 3);
             assert(myModule.sumArray([]) === 0);
             assert(myModule.sumArray() === 0);
