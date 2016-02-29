@@ -2,7 +2,7 @@
   "name": "",
   "private": true,
   "scripts": {
-    "test": "npm_config_loglevel=silent tap test/math.js --cov --nyc-arg=--require=babel-register",
+    "test": "npm_config_loglevel=silent tap test/*.js --cov --nyc-arg=--require=babel-register",
     "clean": "rimraf ./coverage && rimraf ./.nyc_output",
     "clean-build": "rimraf ./dist || true",
     "coverage": "npm run clean && npm run test -- --coverage-report=lcov",
