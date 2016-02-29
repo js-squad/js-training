@@ -44,6 +44,7 @@ Some of the tools available for End-to-End testing in Node.js are:
 --------------------------
 
 ### Test-Driven development (aka TDD)
+![tdd](http://joshldavis.com/img/tdd-vs-bdd/tdd-flowchart.png)
 Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards. [Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 
 ### Behavior-Driven development (aka BDD)

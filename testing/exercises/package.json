@@ -2,11 +2,14 @@
   "name": "",
   "private": true,
   "scripts": {
-    "test": "nyc --cache --require babel-register tap test/math.js",
-    "coverage": "rimraf ./coverage && nyc --require babel-register tap test/math.js --coverage-report=lcov",
-    "compile": "rimraf ./dist && rimraf ./test-dist && babel ./src --out-dir ./dist && babel ./test --out-dir ./test-dist",
+    "test": "npm_config_loglevel=silent tap test/math.js --cov --nyc-arg=--require=babel-register",
+    "clean": "rimraf ./coverage && rimraf ./.nyc_output",
+    "clean-build": "rimraf ./dist || true",
+    "coverage": "npm run clean && npm run test -- --coverage-report=lcov",
+    "compile": "npm run clean-build && babel ./src --out-dir ./dist",
     "dev": "nodemon -q -x 'npm test'",
-    "repl": "babel-node ./repl.js"
+    "repl": "babel-node ./repl.js",
+    "env": "env"
   },
   "devDependencies": {
     "babel-cli": "6.5.1",
@@ -15,7 +18,6 @@
     "babel-register": "6.5.2",
     "babel-runtime": "6.5.0",
     "nodemon": "^1.9.1",
-    "nyc": "^5.6.0",
     "rimraf": "^2.5.2",
     "tap": "^5.7.0"
   },
@@ -23,8 +25,8 @@
     "exclude": [
       "test",
       "test{,-*}.js",
-      "test-dist"
-    ],
-    "sourceMaps": "both"
+      "test-dist",
+      "node_modules/**"
+    ]
   }
 }
