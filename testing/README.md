@@ -1,6 +1,6 @@
 ## Testing
 
-![testing piramid](http://i.imgur.com/Ba9iGlr.png)
+<p align="center"><img width="440" height="350" src ="http://i.imgur.com/Ba9iGlr.png"/></p>
 
 The components of the testing pyramid are described below.
 
@@ -44,7 +44,8 @@ Some of the tools available for End-to-End testing in Node.js are:
 --------------------------
 
 ### Test-Driven development (aka TDD)
-![tdd](http://joshldavis.com/img/tdd-vs-bdd/tdd-flowchart.png)
+<p align="center"><img src ="http://joshldavis.com/img/tdd-vs-bdd/tdd-flowchart.png" /></p>
+
 Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards. [Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 
 ### Behavior-Driven development (aka BDD)
@@ -68,9 +69,10 @@ Tap includes some assertion methods such as:
 - t.doesNotThrow
 - t.equal
 - t.notEqual
+
 You'll find the comprehensive list at the [docs](http://www.node-tap.org/asserts/).
 
-Reading resources:
+###Reading resources
 - [TAP & Tape, the awesome way to test JavaScript](http://www.macwright.org/2014/03/11/tape-is-cool.html)
 - [Testing JavaScript Modules with Tape](https://ponyfoo.com/articles/testing-javascript-modules-with-tape)
 - [Tape versus Tap](https://remysharp.com/2016/02/08/testing-tape-vs-tap)
