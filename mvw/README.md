@@ -89,6 +89,7 @@ is known as the Presenter).
 ## Implementations
 
 - [Backbone](https://goo.gl/gFWB7m)
+- [Blog Post](http://goo.gl/2QPzui)
 
 ### Passive View
 
