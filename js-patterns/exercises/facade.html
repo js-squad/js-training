@@ -26,33 +26,6 @@
 
         // fetch API basic example: https://davidwalsh.name/fetch
       }
-
-      function sendRequest(path, options, cb) {
-        if(typeof cb !== 'function') {
-          throw new Error('The callback parameter must be a function');
-        }
-        return fetch(path, options).then(function(response) {
-          var err;
-          var fn = Promise.resolve.bind(Promise, response);
-          if(!response.ok) {
-            err = new Error();
-            err.status = response.status;
-            cb(err);
-            return;
-          }
-
-          if(options.dataType === 'text') {
-            fn = response.text;
-          } else if (options.dataType === 'json') {
-            fn = response.json;
-          }
-          return fn.call(response).then(function(result) {
-            cb(null, result);
-          });
-        }, function(err) {
-          cb(err);
-        });
-      }
     </script>
     <script type="text/javascript" src="facade-pos.js"></script>
     </script>
