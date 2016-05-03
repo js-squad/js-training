@@ -1,0 +1,265 @@
+body {
+  background: #000;
+}
+
+.field {
+  height: 600px;
+  margin: 25px auto;
+  padding: 20px;
+  width: 800px;
+}
+
+.pacman {
+  height: 200px;
+  margin: 25px;
+  position: relative;
+  width: 200px;
+  -moz-animation: route 10.0s infinite;
+  -webkit-animation: route 10.0s infinite;
+}
+.pacman .top,
+.pacman .bottom {
+  background-color: yellow;
+  height: 75px;
+  width: 150px;
+}
+.pacman .top {
+  border-radius: 150px 150px 0 0;
+  -webkit-border-radius: 150px 150px 0 0;
+  animation: mouth 0.7s linear 0s infinite alternate;
+  -webkit-animation: mouth 0.7s linear 0s infinite alternate;
+}
+.pacman .bottom {
+  border-radius: 0 0 150px 150px;
+  -webkit-border-radius: 0 0 150px 150px;
+  animation: mouthR 0.7s linear 0s infinite alternate;
+  -webkit-animation: mouthR 0.7s linear 0s infinite alternate;
+}
+
+[class*="ghost"] {
+  height: 200px;
+  margin: 25px;
+  position: relative;
+  width: 200px;
+  animation: routeGhost 10.0s infinite;
+  -webkit-animation: routeGhost 10.0s infinite;
+}
+[class*="ghost"] .head {
+  background: red;
+  height: 100px;
+  position: relative;
+  width: 152px;
+  border-radius: 100px 100px 0 0;
+  -webkit-border-radius: 100px 100px 0 0;
+}
+[class*="ghost"] .head .eye,
+[class*="ghost"] .head .eyeBack {
+  position: relative;
+}
+[class*="ghost"] .head .eyeBack {
+  background: #FFF;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+[class*="ghost"] .head .eyeBack:first-child {
+  float: left;
+  margin: 50px 0 0 25px;
+}
+[class*="ghost"] .head .eyeBack:last-child {
+  float: right;
+  margin: 50px 25px 0 0;
+}
+[class*="ghost"] .head .eye {
+  background: #0d2bd7;
+  height: 25px;
+  margin: 10%;
+  width: 25px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  animation: looking 10.0s infinite;
+  -webkit-animation: looking 10.0s infinite;
+}
+[class*="ghost"] .legs {
+  float: left;
+  width: 0;
+  height: 40px;
+  border-right: 38px solid red;
+  border-left: 38px solid red;
+  border-bottom: 40px solid transparent;
+  display: block;
+}
+
+@keyframes mouth {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes mouth {
+  0% {
+    -webkit-transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@keyframes mouthR {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes mouthR {
+  0% {
+    -webkit-transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@keyframes route {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 560px;
+    top: 0px;
+    transform: rotate(90deg);
+  }
+  50% {
+    left: 560px;
+    top: 360px;
+    transform: rotate(180deg);
+  }
+  75% {
+    left: 0px;
+    top: 360px;
+    transform: rotate(270deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes route {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 560px;
+    top: 0px;
+    -webkit-transform: rotate(90deg);
+  }
+  50% {
+    left: 560px;
+    top: 360px;
+    -webkit-transform: rotate(180deg);
+  }
+  75% {
+    left: 0px;
+    top: 360px;
+    -webkit-transform: rotate(270deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes routeGhost {
+  0% {
+    left: 600px;
+    top: -220px;
+  }
+  25% {
+    left: 600px;
+    top: 160px;
+  }
+  50% {
+    left: 0px;
+    top: 160px;
+  }
+  75% {
+    left: 0px;
+    top: -220px;
+  }
+  100% {
+    left: 600px;
+    top: -220px;
+  }
+}
+@-webkit-keyframes routeGhost {
+  0% {
+    left: 600px;
+    top: -220px;
+  }
+  25% {
+    left: 600px;
+    top: 160px;
+  }
+  50% {
+    left: 0px;
+    top: 160px;
+  }
+  75% {
+    left: 0px;
+    top: -220px;
+  }
+  100% {
+    left: 600px;
+    top: -220px;
+  }
+}
+@keyframes looking {
+  0% {
+    left: 0px;
+    top: 15px;
+  }
+  25% {
+    left: 5px;
+    top: 0px;
+  }
+  50% {
+    left: 15px;
+    top: 0px;
+  }
+  75% {
+    left: 15px;
+    top: 15px;
+  }
+  100% {
+    left: 0px;
+    top: 15px;
+  }
+}
+@-webkit-keyframes looking {
+  0% {
+    left: 0px;
+    top: 15px;
+  }
+  25% {
+    left: 5px;
+    top: 0px;
+  }
+  50% {
+    left: 15px;
+    top: 0px;
+  }
+  75% {
+    left: 15px;
+    top: 15px;
+  }
+  100% {
+    left: 0px;
+    top: 15px;
+  }
+}

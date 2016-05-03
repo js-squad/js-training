@@ -1,0 +1,49 @@
+ <!-- see original at http://codepen.io/matheusagcosta/pen/jJGam -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Event aggregator</title>
+    <link rel="stylesheet" href="event-aggregator.css">
+    <script type="text/javascript">
+      function on(selector, event, handler){
+        // use only DOM API to find all the elements in the website that matches the selector
+        // and attach the function to each element of the DOM on the specified event parameter
+        // HINT1: document.querySelectorAll is a great native API to select more than one element in the DOM
+      }
+
+      var app = {};
+
+      // write a function that receives an event name and a function
+      // it should add the specified function to a list of listeners for that event
+      app.on = function() {};
+
+      // write a function that receives an event name and an optional parameter
+      // it should look on the list of registered listeners for all the ones that match for the specified event name
+      // and call the listener function with the optional parameter as only argument
+      app.trigger = function() {};
+    </script>
+    <script type="text/javascript" src="event-aggregator-pos.js"></script>
+    </script>
+  </head>
+  <body>
+    <div class="field">
+      <div class="pacman">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="ghost">
+        <div class="head">
+          <div class="eyeBack">
+            <div class="eye"></div>
+          </div>
+          <div class="eyeBack">
+            <div class="eye"></div>
+          </div>
+        </div>
+        <div class="legs"></div>
+        <div class="legs"></div>
+      </div>
+    </div>
+  </body>
+</html>

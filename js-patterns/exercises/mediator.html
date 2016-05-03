@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mediator example</title>
+  <script type="text/javascript">
+    var mediator = (function() {
+      var listeners = {};
+      return {
+        publish: function() {} // should receive an event name and a potencial parameter to send to all the listeners
+      , subscribe: function() {} // should receive an event name and a function to act as handler
+      , installTo: function() {} // should add the "subscribe" and "publish" methods to the received object
+      }
+      // HINT: you can re-use the implementation of the event aggregator excercise
+    })();
+    document.addEventListener("DOMContentLoaded", function() {
+      // listen the event of the button, collect the data from the UI and publish a "newMessage" event
+
+      // Append new messages as they come through
+      function displayChatMessage(data) {
+        // add the data message to the element with ID "chatResult"
+        // the format should be '{yourName} said "{message}" to {sendTo} (hh:mm:ss)''
+      }
+
+      // Subscribe to new chat messages being submitted via the mediator on the event "newMessage"
+    });
+  </script>
+  <script type="text/javascript" src="mediator-pos.js"></script>
+</head>
+<body>
+ <h1>Chat</h1>
+<form id="chatForm">
+    <label for="fromBox">Your Name:</label>
+    <input id="fromBox" type="text"/>
+    <br />
+    <label for="toBox">Send to:</label>
+    <input id="toBox" type="text"/>
+    <br />
+    <label for="chatBox">Message:</label>
+    <input id="chatBox" type="text"/>
+    <button action="submit">Chat</button>
+</form>
+
+<div id="chatResult"></div>
+
+</body>
+</html>
