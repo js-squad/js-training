@@ -25,6 +25,33 @@
         // as result ("cb(null, response)")
 
         // fetch API basic example: https://davidwalsh.name/fetch
+        if(typeof path !== 'string') {
+          throw new Error('Path must be a string.');
+        }
+
+        if(typeof cb !== 'function') {
+          throw new Error('The callback parameter must be a function');
+        }
+        return fetch(path, options).then(function(response) {
+          var err;
+          var promise = Promise.resolve(response);
+          if(!response.ok) {
+            err = new Error();
+            err.status = response.status;
+            return Promise.reject(err);
+          }
+
+          if(options.dataType === 'text') {
+            promise = response.text();
+          } else if (options.dataType === 'json') {
+            promise = response.json();
+          }
+          return promise;
+        }).then(function(result) {
+          cb(null, result);
+        }, function(err) {
+          cb(err);
+        });
       }
     </script>
     <script type="text/javascript" src="facade-pos.js"></script>

@@ -14,7 +14,7 @@
 
   assertEqual(typeof sendRequest, 'function', 'Should define a function named "sendRequest".');
 
-  ps1 = sendRequest(Math.random(), {
+  ps1 = sendRequest(Math.random() + '', {
     method: 'get'
   }, function(err, result) {
     called++;
