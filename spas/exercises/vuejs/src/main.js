@@ -29,14 +29,9 @@ router.map({
     component: ItemView
   },
   // add route for user's submissions
-  '/user-submissions/:id': {
-    component: UserSubmissionsView
-  },
 
   // add route for user's comments
-  '/user-comments/:id': {
-    component: UserCommentsView
-  }
+
 })
 
 router.beforeEach(function () {
