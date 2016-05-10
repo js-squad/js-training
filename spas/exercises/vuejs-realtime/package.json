@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "firebase": "^2.4.2",
+    "serve-static": "^1.10.2",
+    "socket.io": "^1.4.6",
+    "socket.io-client": "^1.4.6",
     "vue": "^1.0.0",
     "vue-router": "^0.7.13"
   },
