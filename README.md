@@ -16,7 +16,7 @@
     + [Event Aggregator](/design-patterns/event-aggregator)
     + [Facade](/design-patterns/facade)
     + [Mediator](/design-patterns/mediator)
-    + [Model View Whatever (MVW / MV*)](/mvw)
+    + [Model View Whatever (MVW / MV*)](/design-patterns/mvw)
 - [ECMAScript 2015](/es2015)
 - [Testing](/testing)
 - [Large Scale Applications](/large-scale-apps)
