@@ -89,7 +89,9 @@ is known as the Presenter).
 ## Implementations
 
 - [Backbone](https://goo.gl/gFWB7m)
-- [Blog Post](http://goo.gl/2QPzui)
+- [RIOT](https://goo.gl/D71m45)
+- [RIOT Fundamentals](https://goo.gl/mSihb9)
+- [Blog Post](https://goo.gl/2QPzui)
 
 ### Passive View
 
@@ -150,4 +152,5 @@ is known as the Presenter).
 
 ## Implementations
 
-- [Knockout](http://knockoutjs.com/)
+- [Knockout](https://goo.gl/hh0woV)
+- [Vue.js](https://goo.gl/IQSWjx)
