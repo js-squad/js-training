@@ -1,3 +1,39 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Modules](#modules)
+  - [Concepts](#concepts)
+    - [Exporting](#exporting)
+      - [Concepts](#concepts-1)
+      - [Named exports](#named-exports)
+        - [Concepts](#concepts-2)
+        - [Examples](#examples)
+          - [Multiple export statements](#multiple-export-statements)
+          - [Single export statement](#single-export-statement)
+          - [Exporting with a different name](#exporting-with-a-different-name)
+      - [Default exports](#default-exports)
+        - [Concepts](#concepts-3)
+        - [Examples](#examples-1)
+          - [Exporting a class](#exporting-a-class)
+          - [Exporting a function](#exporting-a-function)
+          - [Exporting a singleton object](#exporting-a-singleton-object)
+    - [Importing](#importing)
+      - [Concepts](#concepts-4)
+      - [Default import](#default-import)
+      - [Namespace import](#namespace-import)
+      - [Named import](#named-import)
+        - [Concepts](#concepts-5)
+        - [Examples](#examples-2)
+          - [Import a single member](#import-a-single-member)
+          - [Import multiple members](#import-multiple-members)
+          - [Import with a different name](#import-with-a-different-name)
+      - [Empty import](#empty-import)
+      - [Combination: default + namespace import](#combination-default--namespace-import)
+      - [Combination: Default + named import](#combination-default--named-import)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Modules
 
 ## Concepts

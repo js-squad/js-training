@@ -1,3 +1,31 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Object creation patterns](#object-creation-patterns)
+  - [Prototype](#prototype)
+    - [Concepts](#concepts)
+  - [Object.getPrototypeOf](#objectgetprototypeof)
+    - [Concepts](#concepts-1)
+    - [Example](#example)
+  - [Object.setPrototypeOf](#objectsetprototypeof)
+    - [Concepts](#concepts-2)
+    - [Example](#example-1)
+  - [Object.create](#objectcreate)
+    - [Concepts](#concepts-3)
+    - [Example](#example-2)
+  - [Own properties](#own-properties)
+    - [Concepts](#concepts-4)
+    - [Example](#example-3)
+  - [Inherited properties](#inherited-properties)
+    - [Concepts](#concepts-5)
+    - [Example](#example-4)
+  - [Constructors](#constructors)
+    - [Concepts](#concepts-6)
+    - [Examples](#examples)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Object creation patterns
 
 ## Prototype

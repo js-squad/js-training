@@ -1,3 +1,43 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Classes](#classes)
+  - [Concepts](#concepts)
+  - [Examples](#examples)
+    - [ES2015 Classes](#es2015-classes)
+    - [Partial replication of ES2015 classes using constructors](#partial-replication-of-es2015-classes-using-constructors)
+  - [Definition](#definition)
+    - [Declaration](#declaration)
+      - [Concepts](#concepts-1)
+      - [Example](#example)
+    - [Expression](#expression)
+      - [Concepts](#concepts-2)
+      - [Examples](#examples-1)
+        - [Anonymous](#anonymous)
+        - [Named (non anonymous)](#named-non-anonymous)
+  - [Method types](#method-types)
+    - [Example](#example-1)
+  - [Subclassing](#subclassing)
+    - [Concepts](#concepts-3)
+    - [Examples](#examples-2)
+      - [Babel implementation of inherits](#babel-implementation-of-inherits)
+      - [Base class](#base-class)
+      - [Derived class](#derived-class)
+      - [Classes can be extended using expressions (constructors and null)](#classes-can-be-extended-using-expressions-constructors-and-null)
+    - [The use of super keyword](#the-use-of-super-keyword)
+      - [In constructors](#in-constructors)
+        - [Concepts](#concepts-4)
+        - [Examples](#examples-3)
+          - [Implicit constructor](#implicit-constructor)
+          - [Explicit constructor that uses this](#explicit-constructor-that-uses-this)
+      - [In methods](#in-methods)
+        - [Concepts](#concepts-5)
+        - [Example](#example-2)
+  - [Bibliography](#bibliography)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Classes
 
 *More than just syntactic sugar*

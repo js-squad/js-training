@@ -1,3 +1,47 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [DOM Events](#dom-events)
+  - [Event flow](#event-flow)
+      - [Concepts](#concepts)
+    - [Capture / Capturing](#capture--capturing)
+      - [Concepts](#concepts-1)
+    - [Target](#target)
+      - [Concepts](#concepts-2)
+    - [Bubbling](#bubbling)
+      - [Concepts](#concepts-3)
+    - [Default browser behavior (if it was not previously cancelled)](#default-browser-behavior-if-it-was-not-previously-cancelled)
+      - [Concepts](#concepts-4)
+  - [Reacting to events](#reacting-to-events)
+    - [Attaching listeners](#attaching-listeners)
+      - [DOM Level 0](#dom-level-0)
+        - [Directly in the HTML: Using the specific element attribute](#directly-in-the-html-using-the-specific-element-attribute)
+          - [Concepts](#concepts-5)
+          - [Example](#example)
+        - [In the script: Using the specific element property](#in-the-script-using-the-specific-element-property)
+          - [Concepts](#concepts-6)
+          - [Example](#example-1)
+      - [DOM Level 2](#dom-level-2)
+        - [Concepts](#concepts-7)
+        - [Example](#example-2)
+    - [Removing Listeners](#removing-listeners)
+      - [DOM Level 0](#dom-level-0-1)
+        - [Example](#example-3)
+      - [DOM Level 2](#dom-level-2-1)
+        - [Concepts](#concepts-8)
+        - [Example](#example-4)
+  - [Event interface](#event-interface)
+    - [preventDefault](#preventdefault)
+      - [Concepts](#concepts-9)
+    - [target VS currentTarget](#target-vs-currenttarget)
+    - [stopPropagation VS stopImmediatePropagation](#stoppropagation-vs-stopimmediatepropagation)
+  - [Bonus Tracks](#bonus-tracks)
+    - [DOMContentLoaded vs Window.load](#domcontentloaded-vs-windowload)
+  - [References](#references)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # DOM Events
 
 ## Event flow

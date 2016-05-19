@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [To review in class](#to-review-in-class)
+  - [Presentations](#presentations)
+  - [Frameworks](#frameworks)
+  - [Applications](#applications)
+- [Curated Resources](#curated-resources)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # To review in class
 
 ## Presentations

@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Testing](#testing)
+  - [Unit testing](#unit-testing)
+  - [Integration testing](#integration-testing)
+  - [E2E Testing](#e2e-testing)
+  - [Test-Driven development (aka TDD)](#test-driven-development-aka-tdd)
+  - [Behavior-Driven development (aka BDD)](#behavior-driven-development-aka-bdd)
+  - [Code coverage](#code-coverage)
+  - [Mocking](#mocking)
+    - [Proxyquire](#proxyquire)
+    - [Sinon](#sinon)
+  - [node-tap](#node-tap)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Testing
 
 <p align="center"><img width="440" height="350" src ="http://i.imgur.com/Ba9iGlr.png"/></p>

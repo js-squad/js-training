@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Iterables](#iterables)
+  - [Making objects iterables](#making-objects-iterables)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Iterables
 ES2015 introduces a new interface for iteration, _Iterables_. It could be resumed as data consumers (`for...of` or the `spread` operator) and data sources.
 Data sources could be any of the following:

@@ -1,3 +1,30 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Module Pattern (Are we doing it right?)](#module-pattern-are-we-doing-it-right)
+  - [Background](#background)
+    - [Definitions](#definitions)
+    - [Dependency Inyection](#dependency-inyection)
+      - [Concepts](#concepts)
+      - [Examples](#examples)
+    - [Singleton](#singleton)
+      - [Concepts](#concepts-1)
+      - [Literal Singleton](#literal-singleton)
+        - [Concepts](#concepts-2)
+        - [Examples](#examples-1)
+      - [Constructor Singleton](#constructor-singleton)
+        - [Concepts](#concepts-3)
+        - [Examples](#examples-2)
+  - [Module Pattern](#module-pattern)
+    - [Concepts](#concepts-4)
+    - [Examples](#examples-3)
+  - [Variant: Revealing Module Pattern](#variant-revealing-module-pattern)
+    - [Concepts](#concepts-5)
+    - [Examples](#examples-4)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Module Pattern (Are we doing it right?)
 
 ## Background

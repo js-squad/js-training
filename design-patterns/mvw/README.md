@@ -1,3 +1,45 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [MVW - Model, View, Whatever! (Presentation Patterns)](#mvw---model-view-whatever-presentation-patterns)
+  - [Concepts](#concepts)
+  - [Diagrams](#diagrams)
+    - [Clasification](#clasification)
+- [MVC - Model, View, Controller (Traditional / SmallTalk)](#mvc---model-view-controller-traditional--smalltalk)
+  - [Concepts](#concepts-1)
+  - [Diagrams](#diagrams-1)
+    - [Interactions](#interactions)
+    - [Sequence](#sequence)
+  - [Roles](#roles)
+  - [Implementations](#implementations)
+- [MVC - Model, View, Controller (Web / JSP Model2 [Java])](#mvc---model-view-controller-web--jsp-model2-java)
+  - [Concepts](#concepts-2)
+  - [Diagrams](#diagrams-2)
+    - [Interactions](#interactions-1)
+    - [Sequence](#sequence-1)
+- [MVP - Model, View, Presenter](#mvp---model-view-presenter)
+  - [Concepts](#concepts-3)
+  - [Diagrams](#diagrams-3)
+    - [Sequence](#sequence-2)
+  - [Implementations](#implementations-1)
+    - [Passive View](#passive-view)
+      - [Concepts](#concepts-4)
+      - [Diagrams](#diagrams-4)
+        - [Interactions](#interactions-2)
+    - [Supervising Controller/Presenter](#supervising-controllerpresenter)
+      - [Concepts](#concepts-5)
+      - [Diagrams](#diagrams-5)
+        - [Interactions](#interactions-3)
+- [MVVM - Model, View, View Model (Variation of PM - Presentation Model)](#mvvm---model-view-view-model-variation-of-pm---presentation-model)
+  - [Concepts](#concepts-6)
+  - [Diagrams](#diagrams-6)
+    - [Interactions](#interactions-4)
+  - [Roles](#roles-1)
+  - [Implementations](#implementations-2)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # MVW - Model, View, Whatever! (Presentation Patterns)
 
 ## Concepts
