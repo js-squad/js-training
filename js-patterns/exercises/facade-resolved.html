@@ -1,0 +1,60 @@
+ <!-- see original at http://codepen.io/matheusagcosta/pen/jJGam -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Facade example</title>
+    <link rel="stylesheet" href="facade.css">
+    <script type="text/javascript" src="facade-pre.js"></script>
+    <script type="text/javascript">
+
+      function sendRequest(path, options, cb) {
+        if(typeof cb !== 'function') {
+          throw new Error('The callback parameter must be a function');
+        }
+        return fetch(path, options).then(function(response) {
+          var err;
+          var promise = Promise.resolve(response);
+          if(!response.ok) {
+            err = new Error();
+            err.status = response.status;
+            return Promise.reject(err);
+          }
+
+          if(options.dataType === 'text') {
+            promise = response.text();
+          } else if (options.dataType === 'json') {
+            promise = response.json();
+          }
+          return promise;
+        }).then(function(result) {
+          cb(null, result);
+        }, function(err) {
+          cb(err);
+        });
+      }
+    </script>
+    <script type="text/javascript" src="facade-pos.js"></script>
+    </script>
+  </head>
+  <body>
+    <div class="field">
+      <div class="pacman">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="ghost">
+        <div class="head">
+          <div class="eyeBack">
+            <div class="eye"></div>
+          </div>
+          <div class="eyeBack">
+            <div class="eye"></div>
+          </div>
+        </div>
+        <div class="legs"></div>
+        <div class="legs"></div>
+      </div>
+    </div>
+  </body>
+</html>

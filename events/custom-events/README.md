@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CustomEvent](#customevent)
+  - [Compatibility](#compatibility)
+    - [Polyfill](#polyfill)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CustomEvent
 It provides an interface to send your own custom events to a DOM element. You can create a new event with the following:
 ```js

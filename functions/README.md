@@ -1,3 +1,57 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Functions](#functions)
+    - [Concepts](#concepts)
+    - [Tips](#tips)
+  - [How to create them](#how-to-create-them)
+    - [Function declaration (statement)](#function-declaration-statement)
+      - [Concepts](#concepts-1)
+      - [Examples](#examples)
+    - [Function expression](#function-expression)
+      - [Concepts](#concepts-2)
+  - [Named VS Unnamed (Anonymous)](#named-vs-unnamed-anonymous)
+    - [Named](#named)
+      - [Concepts](#concepts-3)
+      - [Examples](#examples-1)
+    - [Unnamed (anonymous)](#unnamed-anonymous)
+      - [Concepts](#concepts-4)
+      - [Examples](#examples-2)
+  - [Parameters VS Arguments](#parameters-vs-arguments)
+    - [Concepts](#concepts-5)
+    - [Example](#example)
+  - [Arity](#arity)
+    - [Concepts](#concepts-6)
+    - [Function types by arity](#function-types-by-arity)
+    - [Language constructions](#language-constructions)
+      - [arguments (array like) object](#arguments-array-like-object)
+        - [Concepts](#concepts-7)
+        - [Examples](#examples-3)
+      - [function.length](#functionlength)
+        - [Concepts](#concepts-8)
+        - [Example](#example-1)
+  - [Callback](#callback)
+    - [Concepts](#concepts-9)
+    - [Example](#example-2)
+  - [THIS](#this)
+    - [Concepts](#concepts-10)
+    - [Examples](#examples-4)
+      - [Function call](#function-call)
+      - [method call](#method-call)
+  - [Function methods (Function.prototype members)](#function-methods-functionprototype-members)
+    - [bind](#bind)
+      - [Concepts](#concepts-11)
+      - [Examples](#examples-5)
+    - [call](#call)
+      - [Concepts](#concepts-12)
+      - [Examples](#examples-6)
+    - [apply](#apply)
+      - [Concepts](#concepts-13)
+      - [Examples](#examples-7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Functions
 
 ### Concepts
