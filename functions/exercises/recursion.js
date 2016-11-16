@@ -3,11 +3,6 @@
 // base: >= 0
 // exponent: >= 0
 
-2 * (2 * 2)
-2 * (2)
-2 * (1)
-1
-
 function power(base, exponent) {
     // complete with implementation (base case + recursive case)
 }
