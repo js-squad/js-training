@@ -11,7 +11,7 @@ var assertEqual = require("./assert-equal");
 
 assertEqual.many([
     [
-        'getGetters("abcde")',
+        'getGetters(["a", "b", "c", "d", "e"])',
         ["a", "b", "c", "d", "e"],
     ],
     [
@@ -30,6 +30,6 @@ assertEqual.many([
         }),
         incomplete[1]
     ];
-});
+}));
 
 console.log("You did it, great!");
