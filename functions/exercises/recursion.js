@@ -3,12 +3,17 @@
 // base: >= 0
 // exponent: >= 0
 
+2 * (2 * 2)
+2 * (2)
+2 * (1)
+1
+
 function power(base, exponent) {
     // complete with implementation (base case + recursive case)
 }
 
 // DO NOT MODIFY FROM HERE
-var assertEqual = require("./assertEqual");
+var assertEqual = require("./assert-equal");
 
 assertEqual.many([
     [
