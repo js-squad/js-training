@@ -1,0 +1,23 @@
+{
+  "name": "@js-squad/js-training",
+  "version": "0.1.0",
+  "description": "JS Training",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Mauro Titimoli",
+    "email": "mgtitimoli@gmail.com",
+    "url"  : "https://github.com/mgtitimoli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-squad/js-training.git"
+  },
+  "bugs": {
+    "url": "https://github.com/js-squad/js-training/issues"
+  },
+  "homepage": "https://github.com/js-squad/js-training#readme",
+  "devDependencies": {
+    "doctoc": "1.2.0"
+  }
+}
