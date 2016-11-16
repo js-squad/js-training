@@ -144,7 +144,7 @@ var test = function otherName() {
     ];
 };
 
-console.log(test.name); // test
+console.log(test.name); // otherName
 console.log(test()); // [ "function", "function" ]
 
 var f = test;
