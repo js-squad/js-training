@@ -3,7 +3,7 @@
 
 var a = 1, b = 2, c = 3;
 
-(function firstFunction(){
+function firstFunction(){
     var b = 5, c = 6;
 
     (function secondFunction(){
@@ -18,10 +18,12 @@ var a = 1, b = 2, c = 3;
             })();
         })();
     })();
-})();
+}
 
 // DO NOT MODIFY FROM HERE
 var assertEqual = require("./assert-equal");
+
+typeof assertEqual;
 
 function itShouldBeHere(a, b, c) {
     if (itShouldBeHere.calls === undefined) {
@@ -34,6 +36,8 @@ function itShouldBeHere(a, b, c) {
     assertEqual("b", b, 8);
     assertEqual("c", c, 6);
 }
+
+firstFunction();
 
 assertEqual("itShouldBeHere calls", itShouldBeHere.calls, 1);
 
