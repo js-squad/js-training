@@ -125,7 +125,7 @@ var logger = {
 };
 ```
 
-2 - Stateless With additional logic (wrapped within a closure to keep this logic private)
+2 - Stateless with additional logic (wrapped within a closure to keep this logic private)
 
 ```javascript
 var logger = (function() {
@@ -406,7 +406,7 @@ var App.Module1 = (function(Module2, Module5) {
 
 ### Concepts
 
-- It should only be used to **stateless modules** (it uses a literal singleton)
+- It should only be used for **stateless modules** (it uses a literal singleton)
 - Instead of constructing the singleton throughout the closure, it is exported with a single statement at the end using an anonymous object literal
 - Because there is only a single export statement, it can be easily seen what functionallity exports (interface)
 - The fact that there is an additional object (anonymous object literal) allows to keep fixed their methods (that is what the consumer sees) and change the name of the functions they contain
