@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Promises](#promises)
+  - [Definition:](#definition)
   - [States](#states)
   - [Chaining](#chaining)
   - [Error handling](#error-handling)
@@ -10,12 +11,13 @@
   - [Promise.reject](#promisereject)
   - [Promise.all](#promiseall)
   - [Promise.race](#promiserace)
+  - [Exercises](#exercises)
   - [Resources](#resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Promises
-##Definition:
+## Definition:
 A promise represents the eventual result of an asynchronous operation. It is a placeholder into which the successful result value or reason for failure will materialize.
 
 - A promise can only succeed or fail one. It cannot succeed or fail twice,
@@ -49,7 +51,7 @@ getJSONConfig()
     });
 ```
 
-But when using asynchronous actions, you will need to chain consecutive `.then` invocations with a function that returns a promise-like value: 
+But when using asynchronous actions, you will need to chain consecutive `.then` invocations with a function that returns a promise-like value:
 ```js
 getUser()
     .then(function(user){
@@ -97,7 +99,6 @@ new Promise(funtion(resolve, reject) {
     });
 ```
 
-
 ## Promise.all
 It allows the manipulation of a list of promises in parallel with a single resolve handler:
 ```js
@@ -107,15 +108,14 @@ Promise.all([Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)])
     });
 ```
 
-
 ## Promise.race
 It resolves or rejects as soon as any of the promises resolves or rejects.
 ```js
-var p1 = new Promise(function(resolve, reject) { 
-    setTimeout(resolve, 500, "one"); 
+var p1 = new Promise(function(resolve, reject) {
+    setTimeout(resolve, 500, "one");
 });
-var p2 = new Promise(function(resolve, reject) { 
-    setTimeout(resolve, 100, "two"); 
+var p2 = new Promise(function(resolve, reject) {
+    setTimeout(resolve, 100, "two");
 });
 
 Promise.race([p1, p2]).then(function(value) {
@@ -124,7 +124,8 @@ Promise.race([p1, p2]).then(function(value) {
 });
 ```
 
-
+## Exercises
+- [NodeSchool's Promise It Won't Hurt workshop](https://github.com/stevekane/promise-it-wont-hurt)
 
 ## Resources
 - [HTML5 Rocks: JavaScript Promises](http://www.html5rocks.com/en/tutorials/es6/promises/)
