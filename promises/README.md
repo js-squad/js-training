@@ -277,7 +277,7 @@ Promise.race([p1, p2]).then(function (value) {
 
 - If an error is thrown within the constructor (as it would happen within then or catch callbacks), it will create a rejected promise
 - Prefer the use of `Promise.resolve` and `Promise.reject` if the settled value is known beforehand
-- Prefer adding a last `.catch` to the chain instead of providing it as the second parameter of `.then`
+- Prefer providing onReject callbacks using `.catch` instead of providing them as the second parameter of `.then`, as doing this way would also catch a possible rejection done within any onFulfill callback
 
 ## Exercises
 - [NodeSchool's Promise It Won't Hurt workshop](https://github.com/stevekane/promise-it-wont-hurt)
