@@ -212,11 +212,10 @@ el.removeEventListener("click", sayUserName);
 
 ## References
 
-- DOM Level 2 Events Specification: https://goo.gl/v26pHe
-- DOM Level 2 Events Specification / Event interface: https://goo.gl/bhFVfc
-- List of standard events: https://goo.gl/aajng4
-- Event interface: https://goo.gl/iyC88K
-- addEventListener: https://goo.gl/dlGfbh
-- removeEventListener: https://goo.gl/9KjX1L
-- A crash course in how DOM events work: http://goo.gl/j0LHsc
-- An Introduction To DOM Events: https://goo.gl/Cuabcc
+- [DOM Level 2 Events Specification](https://www.w3.org/TR/DOM-Level-2-Events/events.html)
+- [List of standard events](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [Event interface](https://developer.mozilla.org/en/docs/Web/API/Event)
+- [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
+- [A crash course in how DOM events work](https://www.bitovi.com/blog/a-crash-course-in-how-dom-events-work)
+- [An Introduction To DOM Events](https://www.smashingmagazine.com/2013/11/an-introduction-to-dom-events)
