@@ -88,6 +88,7 @@
 
 ###### Concepts
 
+- The listener's code is directly specified in the element attribute with the name on + *event*
 - This approach is highly discouraged since it promotes coupling between the presentation and the business layers (**separation of concerns**)
 - If we change some listener (function) signature, we must also change all the html parts that refers to it
 
@@ -102,6 +103,9 @@
 > Using the specific element property
 
 ###### Concepts
+
+- The listener (callback) is registered simply assigning it to the element's property with the name on + *event*
+- This was the recommended approach since business logic was entirely specified within the script
 
 ###### Example
 
