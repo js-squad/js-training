@@ -211,6 +211,7 @@ It can be used to identify events that
 ### stopPropagation VS stopImmediatePropagation
 
 - **stopPropagation** (DOM Level 2) prevents handlers attached to the *parent elements* to be executed
+
 - **stopImmediatePropagation** (DOM Level 3) does the same as **stopPropagation** but also prevents handlers attached to the *current element* to be executed
 
 ## Bonus Tracks
