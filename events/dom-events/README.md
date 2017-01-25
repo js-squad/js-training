@@ -27,8 +27,9 @@
         - [Concepts](#concepts-3)
         - [Example](#example-4)
   - [Event interface](#event-interface)
-    - [preventDefault](#preventdefault)
+    - [isTrusted](#istrusted)
     - [target VS currentTarget](#target-vs-currenttarget)
+    - [preventDefault](#preventdefault)
     - [stopPropagation VS stopImmediatePropagation](#stoppropagation-vs-stopimmediatepropagation)
   - [Bonus Tracks](#bonus-tracks)
     - [DOMContentLoaded vs Window.load](#domcontentloaded-vs-windowload)
@@ -187,18 +188,25 @@ el.addEventListener("click", sayUserName);
 el.removeEventListener("click", sayUserName);
 ```
 
-## Event interface
+## [Event interface](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+
+### isTrusted
+
+It can be used to identify events that
+
+- **true**: were dispatched by the user agent (from an user action)
+- **false**: were programatically triggered ([dispatchEvent](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent))
+
+### target VS currentTarget
+
+- **event.target** identifies the element on which the event originated, and keeps the same during the entire event propagation (capturing and bubbling phases)
+
+- **event.currentTarget** event propagation can be though as a process in which the event traverses the DOM tree (capturing: top -> down, bubbling: down - top), and continuing with this way of thinking, then, current target will hold the current traversed element
 
 ### preventDefault
 
 - It prevents the default action of the event to be triggered
 - Not all the events are cancelable (`event.cancelable: boolean`)
-
-### target VS currentTarget
-
-> **event.target** identifies the element on which the event originated, and keeps the same during the entire event propagation (capturing and bubbling phases)
-
-> **event.currentTarget** event propagation can be though as a process in which the event traverses the DOM tree (capturing: top -> down, bubbling: down - top), and continuing with this way of thinking, then, current target will hold the current traversed element
 
 ### stopPropagation VS stopImmediatePropagation
 
