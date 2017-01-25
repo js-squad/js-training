@@ -3,37 +3,31 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [DOM Events](#dom-events)
-  - [Event flow](#event-flow)
-      - [Concepts](#concepts)
+  - [Event flow (phases)](#event-flow-phases)
     - [Capture / Capturing](#capture--capturing)
-      - [Concepts](#concepts-1)
     - [Target](#target)
-      - [Concepts](#concepts-2)
     - [Bubbling](#bubbling)
-      - [Concepts](#concepts-3)
-    - [Default browser behavior (if it was not previously cancelled)](#default-browser-behavior-if-it-was-not-previously-cancelled)
-      - [Concepts](#concepts-4)
+  - [Default browser behavior (if it was not previously cancelled)](#default-browser-behavior-if-it-was-not-previously-cancelled)
   - [Reacting to events](#reacting-to-events)
     - [Attaching listeners](#attaching-listeners)
       - [DOM Level 0](#dom-level-0)
-        - [Directly in the HTML: Using the specific element attribute](#directly-in-the-html-using-the-specific-element-attribute)
-          - [Concepts](#concepts-5)
+        - [Directly in the HTML (inline model):](#directly-in-the-html-inline-model)
+          - [Concepts](#concepts)
           - [Example](#example)
-        - [In the script: Using the specific element property](#in-the-script-using-the-specific-element-property)
-          - [Concepts](#concepts-6)
+        - [In the script (traditional model)](#in-the-script-traditional-model)
+          - [Concepts](#concepts-1)
           - [Example](#example-1)
       - [DOM Level 2](#dom-level-2)
-        - [Concepts](#concepts-7)
+        - [Concepts](#concepts-2)
         - [Example](#example-2)
     - [Removing Listeners](#removing-listeners)
       - [DOM Level 0](#dom-level-0-1)
         - [Example](#example-3)
       - [DOM Level 2](#dom-level-2-1)
-        - [Concepts](#concepts-8)
+        - [Concepts](#concepts-3)
         - [Example](#example-4)
   - [Event interface](#event-interface)
     - [preventDefault](#preventdefault)
-      - [Concepts](#concepts-9)
     - [target VS currentTarget](#target-vs-currenttarget)
     - [stopPropagation VS stopImmediatePropagation](#stoppropagation-vs-stopimmediatepropagation)
   - [Bonus Tracks](#bonus-tracks)
@@ -44,24 +38,19 @@
 
 # DOM Events
 
-## Event flow
+## Event flow (phases)
 
 - image: https://goo.gl/XAz2Jd
 - event.eventPhase: https://goo.gl/1mMmBR
-
-#### Concepts
-
-- Phases are specifically used to reduce the amount of listeners, and therefore increase of the application the performance and simplify the dynamic addition of children (only html)
 - The event **propagation** can be cancelled on any listener using the corresponding event method
 - `event.target` VS `event.currentTarget`
+- One of the uses of phases is to reduce the amount of listeners, since it allows adding just one to a common ancestor and then do the corresponding action comparing event.currentTarget with the required DOMElement
 
 ### Capture / Capturing
 
 > event.eventPhase === Event.CAPTURING_PHASE === 1
 
-#### Concepts
-
-- The event is being propagated through the target's ancestor objects.
+- Propagation starts in the root ancestor and continues thoughout all the descendants until it reaches the target
 - **Window** > **Document** > ... > **Target's Parent**
 - listener `useCapture = true` (3rd param of addEventListener) => executed
 
@@ -69,23 +58,18 @@
 
 > event.eventPhase === Event.AT_TARGET === 2
 
-#### Concepts
-
-- The flow reached the element where the event was dispatched
+- The flow reached the element where the event was dispatched (target)
 - `event.bubbles === false` => flow stops here
 
 ### Bubbling
 
 > event.eventPhase === Event.BUBBLING_PHASE === 3
 
-#### Concepts
-
 - It only happens if `event.bubbles === true`
-- **Target's parent** > ... > **Document** > **Window** 
+- Propagation continues from the target until it reaches the root ancestor
+- **Target's parent** > ... > **Document** > **Window**
 
-### Default browser behavior (if it was not previously cancelled)
-
-#### Concepts
+## Default browser behavior (if it was not previously cancelled)
 
 - It only happens if none of the listeners cancelled it (`event.preventDefault()`)
 - It executes the default action for a given event (ex. for links, it redirects to the url specified in the **href** attribute)
@@ -98,7 +82,9 @@
 
 > Just one event handler
 
-##### Directly in the HTML: Using the specific element attribute
+##### Directly in the HTML (inline model):
+
+> Using the specific element attribute
 
 ###### Concepts
 
@@ -111,7 +97,9 @@
 <button onclick="alert('hello!');"> Say Hello! </button>
 ```
 
-##### In the script: Using the specific element property 
+##### In the script (traditional model)
+
+> Using the specific element property
 
 ###### Concepts
 
@@ -136,8 +124,8 @@ el.onclick = function onElementClick(){
     - **IE**
         - name starts with *on* (ex. *onclick*)
         - only bubbling
-        - **this**: global object / undefined (strict mode) 
-        - attachEvent / detachEvent 
+        - **this**: global object / undefined (strict mode)
+        - attachEvent / detachEvent
         - cancelBubble / returnValue
     - **FF**
         - only capturing
@@ -150,8 +138,8 @@ el.onclick = function onElementClick(){
 ```javascript
 var el = document.getElementById('myButton')
 
-el.addEventListener( 'click', function onElementClick(){
-     alert('Hello!');
+el.addEventListener('click', function onElementClick(){
+    alert('Hello!');
 }, false);
 ```
 
@@ -199,14 +187,14 @@ el.removeEventListener("click", sayUserName);
 
 ### preventDefault
 
-#### Concepts
-
 - It prevents the default action of the event to be triggered
 - Not all the events are cancelable (`event.cancelable: boolean`)
 
 ### target VS currentTarget
 
-> **event.currentTarget** identifies the current target for the event, as the event traverses the DOM (capturing and bubbling phases) while **event.target** holds the reference of the element on which the event occurred
+> **event.target** identifies the element on which the event originated, and keeps the same during the entire event propagation (capturing and bubbling phases)
+
+> **event.currentTarget** event propagation can be though as a process in which the event traverses the DOM tree (capturing: top -> down, bubbling: down - top), and continuing with this way of thinking, then, current target will hold the current traversed element
 
 ### stopPropagation VS stopImmediatePropagation
 
